@@ -1,0 +1,55 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: blueviolet;
+  /* background-image: url(./xD.gif); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button {
+  border-radius: 15px;
+  border: 5px solid rgb(238, 55, 214);
+  width: 200px;
+  height: 50px;
+  background-color: aquamarine;
+}
+
+.modal-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  margin-top: -125px;
+  background-color: rgb(44, 124, 189);
+  border-radius: 15px;
+  width: 500px;
+  height: 250px;
+  transform: translateY(-100vh);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.modal-container > div {
+  display: flex;
+  gap: 40px;
+  margin-top: 100px;
+}
+
+.modal-title {
+  margin-top: 40px;
+}
